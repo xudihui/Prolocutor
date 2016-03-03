@@ -1,0 +1,108 @@
+
+
+/*针对好易购的css*/
+header.padding{ position:relative;height:auto;padding:37px 0 40px 0}
+header{padding:0}
+.slider{display:none;margin-bottom:50px}
+.focus{bottom:5px!important}
+.focus span{width:8px;height:8px;margin-right:10px;border-radius:50%;background:#fff;font-size:0}
+.focus span.current{background:#cc6666}
+.focus div{ position:absolute;left:50%;margin-left:-45px;margin-top:5px;}
+.header-box{background:#fff;height: 40px;}
+.header-box h2{color:#000;line-height:38px}
+.ppgs{bottom:6px;}
+.list-box{background:#fff;padding:0}
+.list-box ul{padding:0 10px;border-bottom:8px solid #f2f2f2;overflow: hidden;}
+.full_first{border-bottom:8px solid #f2f2f2;border-top:8px solid #f2f2f2;overflow:hidden;padding:0 8px;}
+.full_first a{float:left;width:33.3%;text-align:center;padding:8px 0;}
+.full_first a:nth-child(2){border-left:2px solid #f2f2f2;width:33.4%;border-right:2px solid #f2f2f2;box-sizing:border-box}
+.full_first a img{width:92px;}
+span.coupon{float:left;height:10px;padding:3px;line-height:10px;border-radius:3px;margin-left:5px;border:1px solid #db5252;color:#db5252}
+span.coupon:after{content:'优惠券'}
+.top_s{height:37px;background:#f2f2f2;line-height:37px;font-size:14px;position:fixed;z-index:3;width:100%;top:0}
+.top_s_left{width:65px;height:100%;float:left;background:#fff;color:#db5252}
+.top_s_search{width:55px;cursor:pointer;height:23px;line-height:22px;text-align:center;margin-top:7px;float:right;color:#797979;border-left:1px solid #d1d1d1}
+.top_s_search:after{content:'搜索'}
+.top_s_right{padding-left:65px;padding-right:66px;height:100%;}
+i.icon_new{background-image:url(../images/icon_new.png)!important;background-size:400px 97px;background-repeat:no-repeat}
+.top_s_left i{display:inline-block;background-position:10px -73px;width:25px;height:20px;}
+.top_s_right i{display:inline-block;background-position:-46px -77px;width:25px;height:20px;position: relative;top: 2px;}
+.top_s_right input{height:37px;width:100%;position:relative;top:-38px;background:none;border:none;padding-left:30px;box-sizing:border-box}
+.top_s_right input::-webkit-input-placeholder {color: #797979 !important; }
+.setover {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.show{display:block!important}
+.classification{background:rgba(0,0,0,.8);width:100%;position:fixed;top:37px;z-index:3;height:9999px;display:none}
+.classification .classification_content{background:#fff;padding-top:10px;overflow:hidden}
+.classification .classification_content a{float:left;box-sizing:border-box;font-size:14px;color:#444;height:28px;line-height:28px;margin-bottom:1.5%;margin-left:1.5%;text-align:center;width:30.66%;border:1px solid #d8d8d8;}
+.classification .classification_content a.active{border:1px solid #db5252}
+
+.footers{z-index:4}
+.footers ul li{width:25%;}
+.footers ul li i{width:22px;position:relative;background-size:400px 97px!important;}
+.footers ul li .home{background-position:-55px 0;}
+.footers ul li .cart{background-position:-112px 0;}
+.footers ul li .order{background-position:-332px 0;}
+.footers ul li .mession{background-position:-168px 0;}
+
+.footers ul li.current i{background-position:0 -42px;} 
+.footers ul li.current .home{background-position:-55px -42px;} 
+.footers ul li.current .cart{background-position:-112px -42px;} 
+.footers ul li.current .order{background-position:-332px -42px;} 
+.footers ul li.current .mession{background-position:-168px -42px;} 
+
+
+.prdinfo{border:none}
+.unit-ticket{background:#f2f2f2;padding:0 10px;font-size:14px;}
+.unit-ticket a{display:block;border-bottom:1px solid #ccc;height:20px;line-height:20px;padding:10px 0;}
+.unit-ticket a:last-child{border-bottom:none}
+.unit-ticket a:after{content:'领取 >';float:right;color:#777}
+.unit-ticket a.gray:after{content:'已领取';float:right;color:#777}
+.unit-ticket a i{display:inline-block;margin-right:10px;font-style:normal;border:1px solid #aaa;color:#db5252;text-align:center;border-left:22px solid #db5252;width:40px;height:18px;border-radius:3px}
+.unit-ticket a i:before{content:'券';color:#fff;margin-left:-18px;margin-top:-1px;float:left}
+.unit-ticket a.gray i{border-left:22px solid #ccc;color:#aaa}
+footer ul li.current a{top:-1px}
+
+footer ul li i{margin-right:0}
+
+footer.footer_detail{-webkit-box-shadow:none;border-top:1px solid #dfdfdf}
+footer.footer_detail ul li{height:40px;}
+footer.footer_detail ul li:first-child{border-right:1px solid #dfdfdf;box-sizing:border-box}
+footer.footer_detail ul li p{margin-top:-2px;font-size:12px}
+footer.footer_detail ul li.footer_detail_home i{background-size: 400px 97px!important;background-position:-56px 0;}
+footer.footer_detail ul li.footer_detail_home,footer.footer_detail ul li.footer_detail_mark,footer.footer_detail ul li.footer_detail_marked{width:17%;}
+
+footer.footer_detail ul li.footer_detail_mark i{background-size: 400px 97px!important;background-position:-223px 0;}
+footer.footer_detail ul li.footer_detail_marked i{background-size: 400px 97px!important;background-position:-223px -42px;}
+
+
+.applysearch{margin-top:10px;}
+.sqbtn2{margin-top:-50px;width:120px;float:right;border-left:10px solid #f2f2f2}
+.sqbtn a{padding:8px 0}
+.bggray{background:#ccc}
+a.colorred{color:#db5252;float:right;position:Relative;top:4px;}
+.w100{width:100%}
+.jmeng-top{margin-bottom:10px}
+
+span.red{color:#db5252;}
+.pic{background:url(../images/top3.jpg);height:112px;background-size: 100% 112px; line-height:112px;text-align:center;}
+.footers ul li .num{right:-5px}
+.set{position:absolute;padding:6px;top:10px;right:10px;background:#c33636;border-radius:15px;line-height:23px}
+.set span{padding:0 5px!important;float:right}
+.nav .nav-ul li{ width:25%;background:#fff;float:left; height: 80px; padding: 15px 0;box-sizing: border-box; text-align:center;  /* border-bottom:2px solid #fff; */ font-size:14px;}
+.nav .nav-icon{padding-top:0}
+.nav .nav-ul{border-bottom:0}
+.nav h4{font-weight:normal;background:#fff;color:#333;padding:10px;border-bottom:1px solid #ccc;line-height: 24px;}
+.nav h4 a{color:#aaa;float:right;font-size:12px;}
+.nav .nav-icon_new{margin-top:10px;border-top:1px solid #ccc; }
+
+.nav .nav-ul.nav-icon_new li{border-right: 1px solid #ccc;height:90px;  border-bottom: 1px solid #ccc;}
+.nav .nav-ul li span{position:absolute;left:50%;margin-left:7px;background:#fff;padding:1px;min-width:14px;height:14px;line-height:14px;border-radius:8px;border:1px solid #ff3300;font-size:12px}
+.nav .nav-ul li{position:relative}
+
+
+.colorwhite{color:#fff}
+.Integral-top1{background:#cc6666;color:#fff}
+.Integral-top1 a.duih{background:#ffcc00;color:#db5252}
+.star{float:right;margin-top:10px;color:#fff;font-size:12px;height:12px;line-height:12px}
+.star span{position:relative;top:4px;}
+.star:hover{color:#fff}

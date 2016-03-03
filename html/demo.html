@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>首页</title>
+<link href="../css/base.css" type="text/css" rel="stylesheet">
+<link href="../css/popup.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/widget.js"></script>
+<script type="text/javascript"  src="../js/touch.js"></script>
+</head>
+
+<body>
+
+<button type="button" id="btn">提交</button>
+<br>
+
+<button type="button" id="btn1">提交</button>
+<br>
+<button type="button" id="btn2">提交</button>
+
+
+<br>
+<button type="button" id="btn3">删除</button>
+<br>
+<button type="button" id="btn4">提交</button>
+
+<img src="../images/banner.jpg" class="target">
+
+<script type="text/javascript">
+
+
+	var the_cookie = document.cookie;  
+	var broken_cookie = the_cookie.split("|:");  
+	var the_visiteraccepted = unescape(broken_cookie[1]);  
+	var myDate = new Date();  
+	  
+	if(Number(the_visiteraccepted)!=Number(myDate.getDate())|| the_visiteraccepted=="undefined")  
+	   { var date = myDate.getDate();            
+		 var the_cookie = "soflash|:" + escape(date)+"|:";                                   
+		 document.cookie = the_cookie;  
+	   }  
+	else  
+	{  
+		$('.imgs').hide();
+	}  
+	$(function(){
+		
+		
+		
+		$("#btn").click(function(){	
+			showAlert('dgdg',function(){//回调函数
+				alert('00');
+			});
+		});
+		
+		$("#btn1").click(function(){	
+			showWarn('4454545455',function(){ //回调函数
+				alert('00');
+			});	
+		});
+		
+		$('#btn2').click(function(){
+			showMask('',function(){ //调用load方法
+
+			});	
+			
+		});
+		$('#btn3').click(function(){
+			removeMask();	//清除load方法
+			
+		});
+		
+		
+		/*var str = '长按二维码，关注小海公众号';
+		var imgs = '<img src="../images/erweima.jpg" width="200px">';
+		showCode(str,imgs);	//弹出二维码方
+		$('.showbjbox2,.openboxs-code').show();*/
+		
+		$('#btn4').click(function(){
+			$('.twoCode').show();
+		});
+		
+		$('.twoCode .nos_btn').click(function(){
+			$('.twoCode').hide();
+		});
+		touch.on('.target', 'swipeup', function(ev){
+			console.log("you have done", ev.type);
+		});
+		touch.on('.target', 'swipedown', function(ev){
+			console.log("you have done", ev.type);
+		});
+	
+	});
+
+
+</script>
+
+	<div class="twoCode hide">
+        <div class="showbjbox2"></div>
+        <div class="openboxs-code">
+            <span class="tip-dialog">
+            <img width="200px" src="../images/erweima.jpg">长按二维码，关注小海公众号
+            </span>
+            <i class="nos_btn"></i>
+        </div>
+	</div>
+</body>
+</html>
