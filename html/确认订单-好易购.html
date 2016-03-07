@@ -6,6 +6,7 @@
 <title>确认订单</title>
 <link href="../css/base.css" type="text/css" rel="stylesheet">
 <link href="../css/indentInfo.css" type="text/css" rel="stylesheet">
+<link href="../css/index.new.css" type="text/css" rel="stylesheet">
 <script type="text/javascript" src="../js/jquery.js"></script>
 </head>
 
@@ -14,42 +15,63 @@
 <header>
 	<h1 class="p10"><a href="#"><i class="goback"></i>确认订单</a></h1>
 </header>
-
-<div class="openbox-top openbox-top1 p10 clear">
-        <img src="../images/info3.jpg" width="60px">
-        <h5>精选9包零食特产年货礼盒1996g</h5>
-        <p><b class="fr colorred">￥198.00</b><span class="">共2件商品</span></p>
+<div class="openbox-top-wrap">
+	<div class="openbox-top p10 clear">
+			<img src="../images/info3.jpg" width="60px">
+			<h5 class='setover'>精选9包零食特产年货礼盒1996g精选9包零食特产年货礼盒1996g精选9包零食特产年货礼盒1996g精选9包零食特产年货礼盒1996g精选9包零食特产年货礼盒1996g</h5>
+			<h6 class='setover'>方形礼盒</h6>
+			<p><b class="fr colorred">￥198.00</b><span class="">共2件商品</span></p>
+	</div>
+		
+	<div class="openbox-top p10 clear">
+			<img src="../images/info3.jpg" width="60px">
+			<h5 class='setover'>精选9包零食特产年货礼盒1996g</h5>
+			<h6 class='setover'>方形礼盒</h6>
+			<p><b class="fr colorred">￥198.00</b><span class="">共2件商品</span></p>
+	</div>
 </div>
-    
 
 <div class="indent-btm m10 pb40">
+<!--
     <div class="indent-btm-li indent-btm-li2">
     	<div class="openbox-m clear">
-        	
             <span class="gmright fr"><a class="deljs" href="javascript:void(0)">-</a><input type="tel" value="1" class="text"><a class="addjs" href="javascript:void(0)">+</a></span>
             <strong>购买数量</strong>
         </div>
     </div>
+-->
     <div class="indent-btm-li">
-    	<p class="shrn widg"><span class="fr">13555555555</span>收货人：<span>张三</span></p>
+    	<p class="shrn widg"><span class="fr">13555555555</span>收货人:<span>张三</span></p>
     	<p class="widg">收货地址：<span>浙江省杭州市上城区望江门建国南苑5幢1单元502室</span><i class="edit"></i></p>
     </div>
-   <div class="indent-btm-li">
-    	<p><span class="fr colorred">快递6.00元</span>运送方式</p>
+    <div class="indent-btm-li">
+    	<p><span class="fr colorred">快递6.00元</span>运送方式:</p>
     </div>
-     <div class="indent-btm-li">
+    <div class="indent-btm-li">
+    	<p><div class="fr colorred btn selected" id='2'>货到付款</div><div class="fr colorred btn" >在线支付</div>支付方式:</p>
+    </div>
+    <div class="indent-btm-li">
     	<p><span class="gray">备注：</span><span></span></p>
     </div>
    
-    
-    
+    <div class="border-top">
+		<div class="indent-btm-li">
+			<p class='multiselect selected'><span>优惠1</span></p>
+		</div>
+		<div class="indent-btm-li">
+			<p class='multiselect'><span>优惠2</span></p>
+		</div>
+		<div class="indent-btm-li">
+			<p class='multiselect'><span>优惠3</span></p>
+		</div>    
+    </div> 
     
 </div><!--indent-btm-->
 
 <footer class="footer">
      <ul class="clear">
          <li class="heji"><strong class="colorred">合计：</strong><strong class="colorred">￥198.00</strong></li>
-         <li class="current"><a href="#" class="btn bgred">确认订单</a></li>
+         <li class="current"><a href="#" class="bgred okay">确认订单</a></li>
      </ul>
 </footer>
 
@@ -70,9 +92,19 @@
 
 <script type="text/javascript">
 	$(function(){
-		$(".btn").click(function(){
+		$(".okay").click(function(){
+		    $('.selected.btn').attr('id')==
 			$(".openbox").show();	
 		});
+		
+		$('p.multiselect').click(function(){
+			$(this).toggleClass('selected');	
+		});
+	
+		$(".btn").click(function(){
+			$(".btn").removeClass('selected');	
+			$(this).addClass('selected');
+		});		
 		$(".closebox ,.confirm ,.counter").click(function(){
 			$(".openbox").hide();	
 		});
