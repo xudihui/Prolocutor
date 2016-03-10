@@ -24,7 +24,7 @@ span.coupon:after{content:'优惠券'}
 .top_s_search{width:55px;cursor:pointer;height:23px;line-height:22px;text-align:center;margin-top:7px;float:right;color:#797979;border-left:1px solid #d1d1d1}
 .top_s_search:after{content:'搜索'}
 .top_s_right{padding-left:65px;padding-right:66px;height:100%;}
-i.icon_new{background-image:url(../images/icon_new.png)!important;background-size:400px 97px;background-repeat:no-repeat}
+.icon_new{background-image:url(../images/icon_new.png)!important;background-size:400px 97px;background-repeat:no-repeat}
 .top_s_left i{display:inline-block;background-position:10px -73px;width:25px;height:20px;}
 .top_s_right i{display:inline-block;background-position:-46px -77px;width:25px;height:20px;position: relative;top: 2px;}
 .top_s_right input{height:37px;width:100%;position:relative;top:-38px;background:none;border:none;padding-left:30px;box-sizing:border-box}
@@ -133,3 +133,9 @@ body.gray_f2{background:#f2f2f2}
 .coupon li p{color:#888}
 .coupon li a.colorred{float:right;margin:auto 10px 10px auto;padding-bottom:10px;top:0}
 .coupon li b{font-size:200%}
+.collection li{margin-bottom:10px;padding:15px;background:#fff;overflow:hidden}
+.collection li img{width:65px;height:65px;float:left;margin-right:8px;}
+.collection li h3{font-weight:normal;margin:0px 0 25px 0;}
+a.del{float:right;background-size: 400px 97px!important;background-position:-215px -77px;width:35px;height:20px;margin-top:-20px}
+
+
