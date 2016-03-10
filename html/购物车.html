@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>手机报名</title>
+<link href="../css/base.css" type="text/css" rel="stylesheet">
+<link href="../css/indentInfo.css" type="text/css" rel="stylesheet">
+<link href="../css/index.new.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+
+<body class="">
+
+
+<span class="gmright fr"><a class="deljs" href="javascript:void(0)">-</a><input type="tel" value="1" class="text"><a class="addjs" href="javascript:void(0)">+</a></span>
+
+
+
+</body>
+
+<script type="text/javascript">
+	$(function(){
+		
+		var _val = $(".text").val();
+		$(".deljs").click(function(){
+			if(_val > 0){
+				_val--;
+				$(".text").val(_val);
+			}
+		});
+		$(".addjs").click(function(){
+			_val++;
+			$(".text").val(_val);
+		});
+	});
+</script>
+</html>
