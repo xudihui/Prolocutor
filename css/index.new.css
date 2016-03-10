@@ -124,3 +124,12 @@ p.multiselect.selected{background:url(../images/icon_check_yes.jpg) right center
 i.price_normal{font-size:12px;font-weight:normal!important;color:#bbb;text-decoration:line-through;font-style:normal;padding-right:2px;}
 a.logistics{padding:1px 5px;border:1px solid #aaa;float:right;border-radius:2px;}
 
+
+.coupon{margin:10px;}
+.coupon li{background:url(../images/r_r.png) #fff right 0 repeat-y;margin-top:10px;background-size:6px 10px;height:70px;}
+.coupon li .l{float:left;width:95px;height:100%;line-height:69px;text-align:center;color:#fff;margin-right:8px;background:url(../images/l_r.png) #db5252 left 0 repeat-y;background-size:6px 10px;}
+body.gray_f2{background:#f2f2f2}
+.coupon li h3{font-weight:normal;margin:3px 0;}
+.coupon li p{color:#888}
+.coupon li a.colorred{float:right;margin:auto 10px 10px auto;padding-bottom:10px;top:0}
+.coupon li b{font-size:200%}
