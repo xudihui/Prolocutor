@@ -159,5 +159,14 @@ a.del{float:right;background-size: 400px 97px!important;background-position:-205
 i{font-style:normal}
 
 
+.frame{ width:100%;height:100%;display:none;box-sizing:border-box; background:rgba(0,0,0,0.5);top:0; position:fixed;z-index:998;padding:40px 15px 0 15px;font-size:16px;}
+.frame_d{background:#fff;padding:20px;overflow:hidden;display:none;}
+.frame_d p{color:#777;text-align:center;padding:3px 0;overflow:hidden;}
+.frame_d p a{text-decoration:underline}
+.frame_d input{width:100%;border:1px solid #ccc;padding:8px 5px;box-sizing:border-box;margin-bottom:8px}
+.frame_d a.cancel{float:left; letter-spacing:0.2em;width:47%;margin-top:10px;text-align:center;height:35px;line-height:35px;background:#a1a1a1;color:#fff;margin-right:6%}
+.frame_d a.commit{float:left; letter-spacing:0.2em;width:47%;margin-top:10px;text-align:center;height:35px;line-height:35px;background:#db5252;color:#fff}
 
-
+.frame_d p a.tab{float:left;text-decoration:none; letter-spacing:0.2em;width:50%;margin-top:10px;text-align:center;height:35px;line-height:35px;color:#777}
+.frame_d p a.tab span{padding-left:20px;background:url(../images/red_uncheck.png) #fff 0px center no-repeat;background-size:16px 16px;}
+.frame_d p a.tab span.selected{background:url(../images/red_checked.png) #fff 0px center no-repeat;background-size:16px 16px;}
