@@ -43,13 +43,14 @@ span.coupon:after{content:'优惠券'}
 .footers ul li .cart{background-position:-112px 0;}
 .footers ul li .order{background-position:-332px 0;}
 .footers ul li .mession{background-position:-168px 0;}
+.footers ul li .join{background-position:-275px 0;}
 
 .footers ul li.current i{background-position:0 -42px;} 
 .footers ul li.current .home{background-position:-55px -42px;} 
 .footers ul li.current .cart{background-position:-112px -42px;} 
 .footers ul li.current .order{background-position:-332px -42px;} 
 .footers ul li.current .mession{background-position:-168px -42px;} 
-
+.footers ul li.current .join{background-position:-275px -42px;} 
 
 .prdinfo{border:none}
 .unit-ticket{background:#f2f2f2;padding:0 10px;font-size:14px;}
