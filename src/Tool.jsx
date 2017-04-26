@@ -26,6 +26,8 @@ Tool.ajax = function (mySetting) {
     for (var attr in mySetting) {
         setting[attr] = mySetting[attr];
     }
+    console.log(mySetting);
+    console.log(setting)
     for (var attr in setting.data) {
         aData.push(attr + '=' + filter(setting.data[attr]));
     }
