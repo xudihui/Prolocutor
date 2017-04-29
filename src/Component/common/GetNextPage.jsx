@@ -160,7 +160,7 @@ const Main = (mySetting) => {
             this.getData = () => {
                 var {data} = this.props.setting;
                 if (typeof data === 'function') {
-                    return data(this.props, this.state);
+                    return data(this.props,  this.state);
                 } else if (data && typeof data === 'string') {
                     return data;
                 } else {
