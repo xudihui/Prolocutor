@@ -50,6 +50,8 @@ const Main = (mySeting) => {
                 var {state, location} = props;
                 var {pathname, search} = location;
                 this.path = pathname + search;
+                console.log(state);
+                console.log('test')
 
                 if (typeof state.path[this.path] === 'object' && state.path[this.path].path === this.path) {
                     this.state = state.path[this.path];
