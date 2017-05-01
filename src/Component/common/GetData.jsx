@@ -47,7 +47,7 @@ const Main = (mySeting) => {
              * @param {Object} props
              */
             this.initState = (props) => {
-                var {state, location} = props;
+                var {state, location} = props; //对象对应的key直接赋值给key
                 var {pathname, search} = location;
                 this.path = pathname + search;
                 console.log(state);
