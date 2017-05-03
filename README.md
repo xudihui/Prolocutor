@@ -1,4 +1,4 @@
-# react-tour
+# react-tour-run
 基于webpack + react + react-router + redux + less + flex.css + ES6 的React版cnode社区
 
 ### demo
