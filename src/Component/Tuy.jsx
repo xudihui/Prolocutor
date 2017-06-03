@@ -22,7 +22,7 @@ class Main extends Component {
     render() {
         return (
             <div>
-                <Header title="退出" leftIcon="fanhui" />
+                <Header title="modify entrance" leftIcon="fanhui" />
                 <div className="signin" data-flex="dir:top main:center cross:center">
                     <div className="center">
                         <button className="btn btn-red" onClick={this.signout}>你妹妹哦？</button>
