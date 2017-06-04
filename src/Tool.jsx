@@ -8,7 +8,6 @@ const Tool = {};
  * @param {object} mySetting 配置ajax的配置
  */
 Tool.ajax = function (mySetting) {
-
     var setting = {
         url: window.location.pathname, //默认ajax请求地址
         async: true, //true。默认设置下，所有请求均为异步请求。如果需要发送同步请求，请将此选项设置为 false
@@ -33,12 +32,12 @@ Tool.ajax = function (mySetting) {
     }
     sData = aData.join('&');
     setting.type = setting.type.toUpperCase();
-
+    console.log(sData)
     var xhr = new XMLHttpRequest();
     try {
         if (setting.type == 'GET') { //get方式请求
             sData = setting.url + '?' + sData;
-            xhr.open(setting.type, sData + '&' + new Date().getTime(), setting.async);
+            xhr.open(setting.type, sData + '&' + 111, setting.async);
             xhr.send();
         } else { //post方式请求
             xhr.open(setting.type, setting.url, setting.async);
@@ -114,7 +113,7 @@ Tool.post = function (pathname, data, success, error) {
  * @param {function} success  请求成功执行方法
  * @param {function} error    请求失败执行方法
  */
-Tool.get = function (pathname, data, success, error) {
+Tool.get = (pathname, data, success, error) => {
     var setting = {
         url: target + pathname, //默认ajax请求地址
         type: 'GET', //请求的方式
