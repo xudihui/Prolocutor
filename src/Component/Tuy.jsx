@@ -25,7 +25,7 @@ class Main extends Component {
                 <Header title="modify entrance" leftIcon="fanhui" />
                 <div className="signin" data-flex="dir:top main:center cross:center">
                     <div className="center">
-                        <button className="btn btn-red" onClick={this.signout}>你妹妹哦？</button>
+                        <button className="btn btn-red" onClick={this.signout}>你妹妹哦111？</button>
                     </div>
                 </div>
             </div>
