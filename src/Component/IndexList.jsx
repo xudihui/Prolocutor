@@ -52,6 +52,8 @@ class Nav extends Component {
  */
 class List extends Component {
     render() {
+        var self = this;
+        console.log(self.props);
         return (
             <ul className="index-list">
                 {
@@ -67,6 +69,7 @@ class List extends Component {
 class ListItem extends Component {
     render() {
         let {id, title, author, visit_count, reply_count, create_at, last_reply_at} = this.props;
+
         return (
             <li>
                 <Link to={`/topic/${id}`}>
