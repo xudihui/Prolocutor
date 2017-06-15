@@ -35,6 +35,7 @@ const RouteConfig = (
             <Route path="signin" component={Signin} />
             <Route path="signout" component={Signout} />
             <Route path="Tuy" component={Tuy} />
+            <Route path="New" component={New} />
         </Route>
     </Router>
 );
