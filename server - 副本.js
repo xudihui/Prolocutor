@@ -4,7 +4,7 @@ var config = require('./webpack.config');
 
 // 相当于通过本地node服务代理请求到了http://cnodejs.org/api
 var proxy = [{
-    path: '/api/*',
+    path: '/api/*',//modify
     target: 'https://cnodejs.org',
     host: 'cnodejs.org'
 }];
