@@ -11,6 +11,5 @@ export default (_ID) => {
             return { _ID: _ID, target: target, type: arr[i] };
         }
     }
-
     return action;
 } 
