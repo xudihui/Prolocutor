@@ -25,6 +25,9 @@ class Main extends Component {
                 if (res.success) {
                     alert('登录成功');
                     res.accesstoken = accesstoken;
+                    console.log('signinSuccess:')
+                    console.log( res);
+                    console.log( this.props.signinSuccess)
                     this.props.signinSuccess(res);
                     this.context.router.push({
                         pathname: '/user/' + res.loginname

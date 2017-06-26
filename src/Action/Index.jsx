@@ -1,3 +1,4 @@
+import C from '../Component/common/C';
 export default (_ID) => {
     var action = {};
     var arr = [
@@ -11,5 +12,7 @@ export default (_ID) => {
             return { _ID: _ID, target: target, type: arr[i] };
         }
     }
+    C('action below:')
+   if(_ID=='User') C(action.signin(_ID ));
     return action;
 } 

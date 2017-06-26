@@ -7,5 +7,7 @@ var store = createStore(
     combineReducers(reducer),
     applyMiddleware(thunk)
 );
+store.subscribe(function(){
+})
 
 export default store;
