@@ -50,9 +50,6 @@ const Main = (mySeting) => {
                 var {state, location} = props; //对象对应的key直接赋值给key
                 var {pathname, search} = location;
                 this.path = pathname + search;
-                console.log(state);
-                console.log('test')
-
                 if (typeof state.path[this.path] === 'object' && state.path[this.path].path === this.path) {
                     this.state = state.path[this.path];
                 } else {

@@ -50,7 +50,7 @@ class Main extends Component {
                 <Header title="登录~" leftIcon="fanhui" />
                 <div className="signin" data-flex="dir:top main:center cross:center">
                     <div className="center">
-                        <div className="text"><input ref="accesstoken" type="text" placeholder="Access Token" /></div>
+                        <div className="text"><input ref="accesstoken" type="text" value="39800778-4624-4942-89fe-d065206f5799"  /></div>
                         <button className="btn" onClick={this.signin}>{this.state.button}</button>
                     </div>
                 </div>
